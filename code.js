@@ -1,7 +1,7 @@
 const todoInput = document.getElementById("todo-input");
 const todoList = document.getElementById("todo-list");
 
-// Load saved todos from localStorage
+
 window.onload = () => {
   const savedTodos = JSON.parse(localStorage.getItem("todos")) || [];
   savedTodos.forEach(todo => createTodoItem(todo));
